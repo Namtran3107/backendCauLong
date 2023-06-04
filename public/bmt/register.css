@@ -1,0 +1,26 @@
+
+:root {
+    --color-website: #e95211;
+}
+.body-website-login-item{
+    height: 520px;
+}
+.login-input-text-list{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.login-input-text-item{
+    float: none;
+    color: var(--color-website);
+    margin-left: 5px;
+}
+.login-input-text-item:hover{
+    color: black;
+}
+.login-input-text-item-text{
+    font-size: 14px;
+    font-family: sans-serif;
+    opacity: 0.8;
+}

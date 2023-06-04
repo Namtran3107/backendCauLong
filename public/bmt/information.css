@@ -1,0 +1,75 @@
+.page_customer_account .col-right-ac .my-account .table-responsive-block .table-cart thead th {
+    border-bottom: 1px solid #dee2e6;
+    background: #E95221;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
+.table-order {
+    width: 100%;
+    font-size: 14px;
+}
+th, td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    color: #1c1c1c;
+}
+.page-title .title-head {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.widget-title {
+    font-size: 19px;
+    font-weight: 400;
+    color: #212B25;
+    margin-bottom: 7px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.margin-top-0 {
+    margin-top: 0px !important;
+}
+.change-information{
+    width: 160px;
+    height: 25px;
+    border: 0;
+    margin-left: 5px;
+}
+.change-information-all{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+h1, .title-head {
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #212B25;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+.btn-blues {
+    background: #E95221;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    text-transform: uppercase;
+    border: 1px solid #E95221;
+    line-height: 42px;
+    height: 45px;
+    padding: 0px 50px;
+}
+.btn-blues:hover, .btn-full:hover {
+    background: #fff;
+    color: #E95221;
+}   
