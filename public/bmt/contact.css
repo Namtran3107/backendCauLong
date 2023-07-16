@@ -1,0 +1,113 @@
+:root {
+    --color-website: #e95211;
+}
+.body-contact-list{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+.body-contact-item{
+    width: 50%;
+}
+.contact-input-all{
+    display: flex;
+    flex-direction: column;
+}
+.header-content-contact{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.contact-phone-email-text{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.contact-phone-email-link{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #fcaf17;
+    font-weight: 600;
+}
+.contact-phone-email-link:hover{
+    text-decoration: none;
+}
+.contact-phone-and-email-margin{
+    margin-bottom: 20px;
+}
+.header-content-contact{
+    margin-bottom: 10px;
+}
+.contact-input-name-and-email{
+    width: calc(calc(100% / 2) - 10px);
+    padding: 5px 20px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+.contact-input-number, .contact-input-text{
+    padding: 5px 20px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+}
+.contact-input-number{
+    width: 290px;
+}
+.contact-input-name-and-email-all{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact-submit{
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    background-color: #01567f;
+    border: 0px;
+    border-radius: 5px
+}
+.body-input-contact{
+    margin-bottom: 20px;
+}
+.contact-logo-img{
+    width: 70px;
+    height: 70px;
+}
+.contact-location-name{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+}
+.contact-location-name:hover{
+    color: var(--color-website);
+    text-decoration: none;
+}
+.contact-location-where:hover{
+    color: var(--color-website);
+    text-decoration: none;
+}
+.contact-location-number:hover{
+    color: var(--color-website);
+    text-decoration: none;
+}
+.contact-location-number, .contact-location-where{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    opacity: 0.9;
+}
+.contact-location-tiem{
+    margin-left: 20px;
+}
+.contact-location-list{
+    margin-top: 15px;
+}
