@@ -74,6 +74,10 @@
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="">
+                            <a href="/admin_member">
+                                <i class="fas fa-tachometer-alt"></i>Thành viên</a>
+                        </li>
+                        <li class="">
                             <a href="/admin_cart">
                                 <i class="fas fa-chart-bar"></i>Đơn hàng</a>
                         </li>
