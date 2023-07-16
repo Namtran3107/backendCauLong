@@ -67,7 +67,16 @@ class CustomerController extends Controller
             return redirect()->route('login');
         }
     }
-
+    public function admin_view_customer(){
+        $customer = Customer::all();
+        return view('admin.member')->with('customer', $customer);
+    }
+    public function delete_member($id){
+        $member = Customer::find($id);
+        $member->delete();
+        $success = 'Delete contact successfully.';
+        return redirect('/admin_member')->with('success',$success);
+    }
     public function edit_customer(Request $request, $id){
         $customer = Customer::find($id);
         $customer->customer_fullname = $request['fullname'];
