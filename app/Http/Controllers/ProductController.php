@@ -4,21 +4,40 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\brand;
+use App\Models\Weight;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->product = new product; // Tiêm Model Product vào thuộc tính $product
+    }
     public function view_product_admin(){
         $product = product::all();
+
         return view('admin.product-post')->with('product', $product);
     }
 
-    public function view_product(){
-        $product = product::all();
-        return view('batminton.product',['product'=>$product]);
+    public function view_product(Request $request)
+    {
+        $brand = $request->input('name_brand');
+        $prices = $request->input('price');
+        $weight = $request->input('weight');
         
+        $product = $this->product->getAllProduct($brand, $prices, $weight);
+        
+        $brand = brand::all();
+        $weight = Weight::all();
+        // dd( $prices);
+        // Trả về kết quả cho view
+        return view('batminton.product', ['product' => $product, 'brand' => $brand, 'weight' => $weight]);
     }
+    
     public function view_product_index(){
         $product = product::all();
             return view('batminton.index',['product'=>$product]);
