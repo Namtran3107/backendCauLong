@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin;
 */
 Route::get('/', [ProductController::class,'view_product_index'])->name('index');
 
+Route::post('/product',[ProductController::class,'view_product']);
 Route::get('/product',[ProductController::class,'view_product']);
 
 Route::get('/recomend', function () {
